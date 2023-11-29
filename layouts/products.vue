@@ -1,0 +1,24 @@
+<template>
+  <div>
+    <header class="shadow-sm bg-white">
+      <nav>
+        <NuxtLink to="/products" class="font-bold">Nuxt Starter Merch</NuxtLink>
+      </nav>
+    </header>
+    <div class="container mx-auto p-4">
+      <slot />
+      <!--This is where the page using this as a layout will go-->
+    </div>
+    <footer class="container mx-auto p-4 flex justify-between border-t-2">
+      <ul class="flex gap-4">
+        <li><NuxtLink to="/">Home</NuxtLink></li>
+        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/products">Products</NuxtLink></li>
+      </ul>
+    </footer>
+  </div>
+</template>
+
+<script setup></script>
+
+<style scoped></style>
